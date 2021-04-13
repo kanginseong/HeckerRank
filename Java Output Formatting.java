@@ -9,7 +9,7 @@ public class Solution {
             {
                 String s1=sc.next();
                 int x=sc.nextInt();
-                System.out.printf(String.format("%-15s",s1));
+                System.out.printf(String.format("%-15s",s1)); // Set the range of 'String'
                 System.out.printf("%03d\n",x);
                 
             }
