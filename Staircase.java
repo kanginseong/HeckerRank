@@ -11,22 +11,14 @@ public class Solution {
     // Complete the staircase function below.
     static void staircase(int n) {
         
-        // for(int i=n-1; i>0; i--){
-        //     for(int j=0; j<i; j++){
-        //         System.out.print(" ");
-        //     }
-        //     for(int k=i; k<0; k--){
-        //         System.out.print("3");
-        //     }
-        //     System.out.println();
-        // }
-        
-        for(int i= 0; i < n; i++) {
-            for(int j = 0; j< n; j++) {
-                 if(j>=n-i-1)System.out.print("#");
-                 else System.out.print(" ");
+        for(int i=0; i<n; i++) {
+            for(int j=0; j<n; j++){
+                if(j < n-i-1)
+                    System.out.print(" ");
+                else
+                    System.out.print("#");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
